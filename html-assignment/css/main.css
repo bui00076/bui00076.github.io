@@ -1,0 +1,20 @@
+body {
+    margin: 10%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;}
+header, footer{
+    background-color: lightcyan;}
+
+.site-title{
+    color: red;}
+#my-image{
+    box-shadow: 0 0 2px 1px black;}
+li:nth-child(2n-1){
+    background-color: papayawhip;}
+a:link {
+    text-decoration: none;
+    background-color: thistle;
+    border: solid;}
+a:hover{
+    background-color: yellowgreen;
+}
