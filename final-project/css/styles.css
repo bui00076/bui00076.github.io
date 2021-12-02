@@ -47,8 +47,6 @@ table {
 /**************************************************
                     Defaults
 **************************************************/
-html{
-    background-color:#aad4cf;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0 15%;
-  }
+header img{
+    width:100%;
+}
