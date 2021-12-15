@@ -50,16 +50,22 @@ table {
                Default    
 **********************************/
 html{
-    font-size: 20px;
+    font-size: 18px;
     font-family: "Opensans", sans-serif;
 }
 header {
     background-color: #222;
 }
-.logo {
-    margin:10px;
-    position: absolute;
+.container {
+    max-width: 1200px;
 }
+.logo {
+    position:absolute;
+    margin:20px;    
+}
+nav {
+    display: flex;
+    flex-direction: column;}
 li {
     padding: 10px;
     margin: 10px;
@@ -72,16 +78,14 @@ a {
     text-decoration: none;
 }
 ul {
-    display: grid;
-    grid-template-rows: repeat(5,1fr);
     color:#c78c06;
 }
 .home {
     display: block;
+    color: #222;  
     background-color: #c78c06;
-    color: #222;
     width: 100%;
-    padding: 10px;
+    height: 100px;
 }
 .search-bar {
     margin:10px;
@@ -103,33 +107,31 @@ form button {
     margin-left: 10px;
 }
 h1 {
-    font-size: 160px;
+    font-size: 80px;
     font-weight: bold;
-}
-#second-row {
-    padding: 50px 10px;
 }
 .banner-text {
     position:absolute;
     background-color: rgba(34, 34, 34, 0.619);
     color:white;
-    padding: 70px 10px;
-    top: 600px;
-    font-size: 22px;
+    padding: 30px 10px 10px;
+    top: 63%;
 }
 .banner-button {
     background-color: #c78c06;
     color: #222;
     border: none;
     padding: 30px 20px;
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 20px;
+    margin-left: 10px;
 }
 h2 {
     font-size: 50px;
     font-weight: bold;
     padding: 10px;
     margin-bottom: 20px;
+    margin-top: 10px;
     margin-left: 10px;
 }
 p {
@@ -138,10 +140,10 @@ p {
 }
 .about-us-img{
     width: 100%;
-    padding: 10px;
 }
 .about-us {
     background-color: #ffe6ac;
+    padding: 10px;
 }
 #about-us-p {
     padding-bottom: 35px;
@@ -152,8 +154,8 @@ p {
 h3 {
     font-size: 30px;
     font-weight: bold;
-    padding: 10px;
-    margin: 20px 10px;
+    padding: 10px 10px 0px;
+    margin: 25px 10px 10px;
 }
 .digital {
     background-color: #ffe6ac;
@@ -167,8 +169,8 @@ h3 {
     color: white;
     border: none;
     padding: 30px 20px;
-    font-size: 30px;
-    margin: 20px;
+    font-size: 20px;
+    margin: 0px 20px 15px;
 }
 .marketing {
     background-color: #ffe6ac;
@@ -183,8 +185,8 @@ h3 {
     color: white;
     border: none;
     padding: 30px 20px;
-    font-size: 30px;
-    margin: 20px;
+    font-size: 20px;
+    margin: 0px 20px 15px;
 }
 .video {
     background-color: #ffe6ac;
@@ -199,8 +201,8 @@ h3 {
     color: white;
     border: none;
     padding: 30px 20px;
-    font-size: 30px;
-    margin: 20px;
+    font-size: 20px;
+    margin: 0px 20px 15px;
 }
 .web {
     background-color: #ffe6ac;
@@ -215,8 +217,8 @@ h3 {
     color: white;
     border: none;
     padding: 30px 20px;
-    font-size: 30px;
-    margin: 20px;
+    font-size: 20px;
+    margin: 0px 20px 15px;
 }
 .print {
     background-color: #ffe6ac;
@@ -231,25 +233,36 @@ h3 {
     color: white;
     border: none;
     padding: 30px 20px;
-    font-size: 30px;
-    margin: 20px;
+    font-size: 20px;
+    margin: 0px 20px 15px;
+}
+.vision {
+    position: relative;
 }
 .vision-img {
     width: 100%;
-    margin-top: 10px;
+    height: 310px;
+    margin-top: 20px;
 }
 .vision-text {
-    position: relative; 
-    top: -350px;
+    position: absolute;
     color: white;
+    top: 10%;
 }
 .vision-button {
     background-color: rgba(34, 34, 34, 0.619);
     border:1px solid #c78c06 ;
     color: white;
-    padding: 30px 20px;
-    font-size: 30px;
-    margin: 20px;
+    padding: 30px 25px;
+    font-size: 20px;
+    margin: 0 15px 15px;
+}
+.our-vision {
+    font-size: 32px;
+}
+.our-team {
+    margin-bottom: 10px;
+    margin-top: 30px;
 }
 .john {
     background-color: #ffe6ac;
@@ -286,15 +299,14 @@ textarea {
     margin-top: 10px;
     font-size: 17px;
   }
-table {
+  table {
     width: 100%;
-    margin-left: 20px;
-
+    margin-left: 10px;
 }
 td {
     border: 1px solid #222;
     margin: 10px;
-    padding: 10px;
+    padding: 15px;
   }
 th {
     border: 1px solid #222;
@@ -309,6 +321,54 @@ th {
 footer {
     background-color: #222;
     color: #c78c06;
-    padding: 10px;
-    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: 10px 0;
 }
+footer p {
+    margin:5px;
+    padding:5px;
+}
+@media screen and (min-width: 760px) {
+    ul li { 
+        display: inline;
+    }
+}
+@media screen and (min-width:760px) {
+    article {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+}
+@media screen and (min-width:760px) {
+    article .digital-container {
+        grid-column: 3/ 5;
+        grid-row: 1/ span 2;
+    }
+}
+@media screen and (min-width:760px) {
+    article .marketing-container {
+        grid-column: 4/ 5;
+        grid-row: 1/ span 2;
+    }
+}
+@media screen and (min-width:760px) {
+    article .video-container {
+        grid-column: 1/ span 4;
+        grid-row: 2/ 2;
+    }
+}
+@media screen and (min-width:760px) {
+    article .web-container {
+        grid-column: 1/ span 4;
+        grid-row: 2/ 2;
+    }
+}
+@media screen and (min-width:760px) {
+    article .print-container {
+        grid-column: 1/ span 4;
+        grid-row: 2/ 2;
+    }
+}
+
